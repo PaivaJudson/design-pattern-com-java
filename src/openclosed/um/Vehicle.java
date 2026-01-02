@@ -14,6 +14,16 @@ public class Vehicle{
         this.seats = seats;
     }
 
+    void car(){
+        System.out.println("Criando um carro: " + color + " year " + year + " com " + seats + " assentos");
+        startVehicle();
+    }
 
+    void motorCycle(){
+        System.out.println("Criando um motor cycle: " + year + " com " + engine + " cilindradas");
+    }
 
+    void startVehicle(){
+        System.out.println("Ligando motores");
+    }
 }
