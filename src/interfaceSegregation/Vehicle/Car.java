@@ -2,7 +2,7 @@ package interfaceSegregation.Vehicle;
 
 import openclosed.um.Vehicle;
 
-public class Car implements IVehicle{
+public class Car implements IVehicle, VeiculoCar{
 
     private String color;
     private String year;
@@ -23,10 +23,6 @@ public class Car implements IVehicle{
         startVehicle();
     }
 
-    @Override
-    public void configureMotorCycle(String color, String year, double engine) {
-
-    }
 
     @Override
     public void startVehicle() {
