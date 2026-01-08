@@ -2,7 +2,6 @@ package criacional.factory.veiculo;
 
 public class Car implements Ivehicle {
 
-
     @Override
     public void startRoute() {
         IO.println("Iniciando o trajeto");
