@@ -1,0 +1,13 @@
+Padrão de Implementação do Method Factory :
+
+1. Criar interface para o Produto
+2. Criar implementações concretas do produto
+3. Criar classe abstrata Criadora com método fábrica abstrato
+4. Criar subclasses concretas que implementam o método fábrica
+
+
+Os 4 passos que acima estão corretos. Eles seguem a estrutura "canônica" do padrão.
+
+Respostas diretas para algumas dúvidas específicas:
+1. As classes concretas têm outras lógicas? Geralmente não. Elas servem apenas para "instanciar" o objeto certo. A lógica complexa fica na classe abstrata (o Criador).
+2. A referência no cliente é sempre da classe abstrata? Sim! Essa é a chave. O cliente conversa com o "Pai" (Abstrato), sem saber qual "Filho" (Concreto) está fazendo o trabalho.
