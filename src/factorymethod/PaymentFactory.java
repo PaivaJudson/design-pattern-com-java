@@ -1,4 +1,4 @@
-package wesley.factorymethod;
+package factorymethod;
 
 public interface PaymentFactory {
 
