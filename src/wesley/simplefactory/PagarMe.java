@@ -1,4 +1,4 @@
-package simplefactory;
+package wesley.simplefactory;
 
 public class PagarMe implements PaymentProcessor {
     @Override

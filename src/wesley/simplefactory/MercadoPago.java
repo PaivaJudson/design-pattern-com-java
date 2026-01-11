@@ -1,4 +1,4 @@
-package simplefactory;
+package wesley.simplefactory;
 
 public class MercadoPago implements PaymentProcessor {
     @Override
