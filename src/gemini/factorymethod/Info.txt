@@ -1,8 +1,8 @@
 Padrão de Implementação do Method Factory :
 
-1. Criar interface para o Produto
+1. Criar ‘interface’ para o Produto
 2. Criar implementações concretas do produto
-3. Criar classe abstrata Criadora com método fábrica abstrato
+3. Criar classe abstrata Criadora com método fábrica abstrato
 4. Criar subclasses concretas que implementam o método fábrica
 
 
