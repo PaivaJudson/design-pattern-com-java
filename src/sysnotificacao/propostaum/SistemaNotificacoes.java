@@ -14,7 +14,7 @@ public class SistemaNotificacoes {
         } else if (tipo.equals("PUSH")) {
             new NotificacaoPush().enviar("Usando Push");
         } else {
-            throw new IllegalArgumentException("Tipo invlido");
+            throw new IllegalArgumentException("Tipo invalido");
         }
     }
 }
