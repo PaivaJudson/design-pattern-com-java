@@ -10,7 +10,7 @@ public class Produto {
     private final int estoque;
     private final boolean disponivel;
 
-    public Produto(Builder builder) {
+    private Produto(Builder builder) {
         this.nome = builder.nome;
         this.descricao = builder.descricao;
         this.preco = builder.preco;
@@ -61,6 +61,13 @@ public class Produto {
         public Builder disponivel(boolean disponivel) {
             this.disponivel = disponivel;
             return this;
+        }
+
+        public Produto build() {
+            if (this.nome == null) {
+                throw new IllegalStateException("Definir nome do Produto");
+            }
+            return new Produto(this);
         }
     }
 
