@@ -7,7 +7,7 @@ public class Pedido {
     private final String acompanhamento;
     private final boolean paraViagem;
 
-    public Pedido(PedidoBuilder builder) {
+    private Pedido(PedidoBuilder builder) {
         this.pratoPrincipal = builder.pratoPrincipal;
         this.bebida = builder.bebida;
         this.sobremesa = builder.sobremesa;
@@ -16,7 +16,7 @@ public class Pedido {
     }
 
 
-    public static class PedidoBuilder {
+    static class PedidoBuilder {
         private final String pratoPrincipal;
         private String bebida = "";
         private String sobremesa = "";
@@ -46,6 +46,23 @@ public class Pedido {
             this.paraViagem = paraViagem;
             return this;
         }
+
+        public Pedido build() {
+            if (this.pratoPrincipal == null) {
+                throw new IllegalStateException("Prato principal é obrigatório");
+            }
+            return new Pedido(this);
+        }
     }
 
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "pratoPrincipal='" + pratoPrincipal + '\'' +
+                ", bebida='" + bebida + '\'' +
+                ", sobremesa='" + sobremesa + '\'' +
+                ", acompanhamento='" + acompanhamento + '\'' +
+                ", paraViagem=" + paraViagem +
+                '}';
+    }
 }
