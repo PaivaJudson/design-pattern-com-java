@@ -12,7 +12,7 @@ public class Produto {
     private final int estoque;
 
 
-    public Produto(String nome, BigDecimal preco, String categoria, String descricao,
+    public Produto(String nome, double preco, String categoria, String descricao,
                    boolean disponivel, int estoque) {
         this.nome = nome;
         this.preco = preco;
