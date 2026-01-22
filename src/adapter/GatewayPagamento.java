@@ -1,5 +1,8 @@
 package adapter;
 
-public class GatewayPagamento {
-
+interface GatewayPagamento {
+    void pagar(double valor);
+    boolean autorizar();
 }
+
+
