@@ -26,7 +26,7 @@ public class Produto {
         return nome;
     }
 
-    public BigDecimal getPreco() {
+    public double getPreco() {
         return preco;
     }
 
